@@ -1,0 +1,29 @@
+6a64426 (HEAD -> main, origin/main, origin/develop, develop) HEAD@{0}: merge develop: Fast-forward
+cbe2588 HEAD@{1}: checkout: moving from develop to main
+6a64426 (HEAD -> main, origin/main, origin/develop, develop) HEAD@{2}: merge styles: Merge made by the 'recursive' strategy.
+cbe2588 HEAD@{3}: checkout: moving from styles to develop
+09b78ac (origin/styles, styles) HEAD@{4}: commit: fixed merge bug on index.html
+70f87d4 HEAD@{5}: checkout: moving from develop to styles
+cbe2588 HEAD@{6}: reset: moving to HEAD
+cbe2588 HEAD@{7}: reset: moving to HEAD
+cbe2588 HEAD@{8}: checkout: moving from styles to develop
+70f87d4 HEAD@{9}: commit: add new word (family) to index html
+d5fe290 HEAD@{10}: checkout: moving from main to styles
+cbe2588 HEAD@{11}: checkout: moving from styles to main
+d5fe290 HEAD@{12}: checkout: moving from main to styles
+cbe2588 HEAD@{13}: merge develop: Fast-forward
+8b72646 HEAD@{14}: checkout: moving from develop to main
+cbe2588 HEAD@{15}: merge styles: Merge made by the 'recursive' strategy.
+34a26ee (origin/images, images) HEAD@{16}: merge images: Fast-forward
+aba8d7e HEAD@{17}: checkout: moving from images to develop
+34a26ee (origin/images, images) HEAD@{18}: commit: added to CSS file on a styles folder
+2cefd20 HEAD@{19}: checkout: moving from styles to images
+d5fe290 HEAD@{20}: commit: added folder styles contains CSS file styles.css
+aba8d7e HEAD@{21}: checkout: moving from develop to styles
+aba8d7e HEAD@{22}: checkout: moving from images to develop
+2cefd20 HEAD@{23}: commit: added links to the images of Samurai warriors to index.html file
+dd6cbff HEAD@{24}: commit: added images folder and images of samurai warriors
+aba8d7e HEAD@{25}: checkout: moving from develop to images
+aba8d7e HEAD@{26}: commit: Added empty index.html file
+8b72646 HEAD@{27}: checkout: moving from main to develop
+8b72646 HEAD@{28}: commit (initial): My first commit - add a readme.txt file
