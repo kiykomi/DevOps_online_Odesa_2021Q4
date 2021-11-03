@@ -1,4 +1,4 @@
-My first task in the EPAM (Task  1.1)
+# My first task in the EPAM (Task  1.1)
 
 1) I download Git for Windows from official repository - https://github.com/git-for-windows/git/releases/download/v2.33.1.windows.1/Git-2.33.1-64-bit.exe
 
@@ -13,6 +13,7 @@ Core text editors like nano  and vi\vim has been installed with git bash shell (
 3) I already  have account on githab - kiykomi@gmail.
 
 4) I created private repo (this is a wery simple stage and stages like this I will not describe in this tutorial).
+
 ![1](screen/Screenshot_2.png)
 
 5) I cloned my repo to mu workstation (I know, this is must be a trouble with SSH and I had to create ssh key pair for git and github, but all worked without this procedure. This procedure I proceed after main task).
@@ -243,21 +244,23 @@ git push
 ```
 
 
-
-
-* So, lets make conflict in files and see  what happens:
+## So, lets make conflict in files and see  what happens:
 * I go to the styles  branch and change readme file in two branches and merge those with develop.
 * Go  to the branch Images and change readme.txt
+
 ![2](screen/Screenshot_8.png)
 
 * Go  to the branch Styles and change readme.txt 
+
 ![3](screen/Screenshot_7.png)
 
 
 * When we merge branchs  we have a conflict!
+
 ![4](screen/Screenshot_9.png)
 
 * Lats see, what happend?
+
 ![5](screen/Screenshot_10.png)
 
 * Terminate merge process with command 
@@ -267,6 +270,7 @@ git merge --abort
 ```
 
 * Edit our file and try to merge again
+
 ![6](screen/Screenshot_11.png)
 
 * Oh my God! Its really work)))
@@ -275,8 +279,8 @@ git merge --abort
 
 
 
-## What is DevOps?
-In my humble opinion, DevOps - is a method of team work, that is designed to optimize development process and automation of routine  tasks, who excluded human mistakes and and rationalizing time resources.
+# What is DevOps?
+## In my humble opinion, DevOps - is a method of team work, that is designed to optimize development process and automation of routine  tasks, who excluded human mistakes and and rationalizing time resources.
 
 
 
