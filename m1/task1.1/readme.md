@@ -289,8 +289,11 @@ git merge --abort
 
 # Used information sources:
 https://git-scm.com/docs/git#_git_commands
+
 https://www.atlassian.com/ru/git/tutorials/using-branches/merge-conflicts
+
 https://www.youtube.com/watch?v=zZBiln_2FhM
+
 https://www.youtube.com/watch?v=9p2d-CuVlgc
 
 
