@@ -122,7 +122,7 @@ mkdir /home/kiykomi/vboxshare
 sudo mount -t vboxsf -o uid=1000,gid=1000 SFolder /home/kiykomi/vboxshare
 ```
 
-![1](screenshots/Screenshot_13.png)
+![2.1.1](screenshots/Screenshot_13.png)
 
 
 -  Winderful! I can share some files with my VM! So, what about change of network configuration?
@@ -133,12 +133,12 @@ VBoxManage modifyvm Ubuntu-21.04_Kiyko_1 --nic1 nat
 
 - Let's check the network connection parameters before and after:
 
-![2](screenshots/Screenshot_14.png)
+![2.1.2](screenshots/Screenshot_14.png)
 
 
 - Check ping to host 8.8.8.8:
 
-![3](screenshots/Screenshot_15.png)
+![2.1.3](screenshots/Screenshot_15.png)
 
 
 - All is works!
