@@ -147,8 +147,46 @@ VBoxManage modifyvm Ubuntu-21.04_Kiyko_1 --nic1 nat
 
 # Part 3.
 
+## Now, I see how make a vagrant  mashine automatically. 
 
 
+
+![2.1.4](screen/Screenshot_16.png)
+
+![2.1.5](screen/Screenshot_17.png)
+
+
+
+
+
+### Let's make our own machine  from our own .box file:
+
+```
+mkdir vgvm
+
+cd .\vgvm
+
+vagrant package --base Ubuntu-21.04_Kiyko_1
+
+vagrant box add Ubuntu-21.04_Kiyko_3 package.box
+
+vagrant init Ubuntu-21.04_Kiyko_3
+
+vagrant up
+```
+
+
+### As we can see - Vagrant use in his work standart vbox cli commands...
+
+
+
+![2.1.6](screen/Screenshot_18.png)
+
+![2.1.7](screen/Screenshot_19.png)
+
+![2.1.8](screen/Screenshot_20.png)
+
+![2.1.9](screen/Screenshot_21.png)
 
 
 
@@ -167,6 +205,8 @@ https://www.oracle.com/technical-resources/articles/it-infrastructure/admin-mana
 Also, I use rules of markdown for create previous and this readme.md - https://github.com/DavidAnson/markdownlint/blob/v0.24.0/doc/Rules.md
 
 https://www.virtualbox.org/manual/UserManual.html
+
+https://medium.com/@gajbhiyedeepanshu/building-custom-vagrant-box-e6a846b6baca
 
 
 
