@@ -125,7 +125,7 @@ sudo mount -t vboxsf -o uid=1000,gid=1000 SFolder /home/kiykomi/vboxshare
 ![2.1.1](screen/Screenshot_13.png)
 
 
--  Winderful! I can share some files with my VM! So, what about change of network configuration?
+-  Wonderful! I can share some files with my VM! So, what about change of network configuration?
 
 ```
 VBoxManage modifyvm Ubuntu-21.04_Kiyko_1 --nic1 nat
@@ -147,7 +147,7 @@ VBoxManage modifyvm Ubuntu-21.04_Kiyko_1 --nic1 nat
 
 # Part 3.
 
-## Now, I see how make a vagrant  mashine automatically. 
+## Now, I see how make a vagrant VM automatically. 
 
 
 
@@ -159,7 +159,7 @@ VBoxManage modifyvm Ubuntu-21.04_Kiyko_1 --nic1 nat
 
 
 
-### Let's make our own machine  from our own .box file:
+### Let's make VM from our own .box file:
 
 ```
 mkdir vgvm
