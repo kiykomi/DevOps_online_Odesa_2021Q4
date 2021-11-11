@@ -6,6 +6,13 @@
 
 Completed labs:
 https://amazon.qwiklabs.com/focuses/17876?parent=catalog
+https://amazon.qwiklabs.com/focuses/22172?catalog_rank=%7B%22rank%22%3A7%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=catalog
+
+
+
+
+
+
 
 https://aws.amazon.com/ru/getting-started/hands-on/launch-a-virtual-machine/
 https://aws.amazon.com/ru/getting-started/hands-on/backup-files-to-amazon-s3/
