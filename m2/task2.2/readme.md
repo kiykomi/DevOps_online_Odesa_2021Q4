@@ -5,7 +5,9 @@
 ## 1. Read the terms of Using the AWS Free Tier and the ability to control their own costs.
 
 Completed labs:
+
 https://amazon.qwiklabs.com/focuses/17876?parent=catalog
+
 https://amazon.qwiklabs.com/focuses/22172?catalog_rank=%7B%22rank%22%3A7%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=catalog
 
 
@@ -15,13 +17,20 @@ https://amazon.qwiklabs.com/focuses/22172?catalog_rank=%7B%22rank%22%3A7%2C%22nu
 
 
 https://aws.amazon.com/ru/getting-started/hands-on/launch-a-virtual-machine/
+
 https://aws.amazon.com/ru/getting-started/hands-on/backup-files-to-amazon-s3/
+
 https://aws.amazon.com/ru/getting-started/hands-on/backup-to-s3-cli/?nc1=h_ls
+
 https://aws.amazon.com/ru/getting-started/hands-on/get-a-domain/?nc1=h_ls
+
 https://docs.aws.amazon.com/AmazonECS/latest/userguide/docker-basics.html
+
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html
 
-I read this - https://aws.amazon.com/ru/free/?sc_channel=em&sc_campaign=wlcm&sc_publisher=aws&sc_medium=em_wlcm_3d&sc_detail=wlcm_3d&sc_content=other&sc_country=global&sc_geo=global&sc_category=mult&ref_=pe_3594660_521463690&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all
+I read this:
+
+https://aws.amazon.com/ru/free/?sc_channel=em&sc_campaign=wlcm&sc_publisher=aws&sc_medium=em_wlcm_3d&sc_detail=wlcm_3d&sc_content=other&sc_country=global&sc_geo=global&sc_category=mult&ref_=pe_3594660_521463690&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all
 
 
 ## 2. Register with AWS (first priority) or alternatively, you can register with AWS Educate if you are currently a student.
