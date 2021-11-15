@@ -1,13 +1,13 @@
 # Task 3.2.
 
 
-## Make a network config with routers.
+## Let's make a network config with routers.
 
 ![1](screen/Screenshot_31.png)
 
 
 
-## Check ping from  devices to routers.
+## Let's check ping from  devices to routers.
 
 ![2](screen/Screenshot_32.png)
 
@@ -19,7 +19,7 @@
 
 
 
-## Do a ping and traceroute  command befor changes in Data Center network.
+## Let's do a ping and traceroute  command befor changes in Data Center network.
 
 ![5](screen/Screenshot_35.png)
 
@@ -36,7 +36,7 @@
 
 ## Let's make 4 VLAN on switch in Data Center and assign it with ports  GE0/1 GE0/3.
 
-### Ping and Traceroute do not working, because now devices  living in another virtual networks and not configured trunk port in router ISP3.
+### Let's Ping and Traceroute do not working, because now devices  living in another virtual networks and not configured trunk port in router ISP3.
 
 ![8](screen/Screenshot_39.png)
 
