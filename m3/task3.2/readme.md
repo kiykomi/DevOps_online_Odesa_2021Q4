@@ -75,6 +75,11 @@ ip address 2.20.89.129 255.255.255.192
 ![13](screen/Screenshot_44.png)
 
 
+## Address Table
+
+![15](screen/Screenshot_47.png)
+
+
 
 
 
