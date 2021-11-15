@@ -34,7 +34,7 @@
 ![7](screen/Screenshot_38.png)
 
 
-## Let's make 4 VLAN on switch in Data Center and assign it with ports  GE0/1 GE0/3.
+## Let's make 4 VLAN on switch in Data Center and assign it with ports  GE0/1 - GE0/3.
 
 ### As we are see, Ping and Traceroute do not working, because now devices  living in another virtual networks and not configured trunk port in router ISP3.
 
