@@ -60,7 +60,7 @@ ip address 2.20.89.129 255.255.255.192
 
 ![9](screen/Screenshot_40.png)
 
-## Set Default Gateway for servers according with new addresses.
+## Setting Default Gateway for servers according with new addresses.
 
 ![10](screen/Screenshot_41.png)
 
