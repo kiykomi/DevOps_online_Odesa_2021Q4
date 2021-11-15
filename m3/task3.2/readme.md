@@ -24,10 +24,10 @@
 ![5](screen/Screenshot_35.png)
 
 
-![6](screen/Screenshot_36.png)
-
 
 ## Let's change netmask to /26 (255.255.255.192)
+
+![6](screen/Screenshot_36.png)
 
 ### As we are see, ping and traceroute success on 2.20.89.1 (router), but unsuccessful on endpoint devices. This trouble persist, because network with mask 26 include only 62 hosts, but our servers have addresses 50, 100 and 150. 100 and 150 - out of limits, of the network.
 
