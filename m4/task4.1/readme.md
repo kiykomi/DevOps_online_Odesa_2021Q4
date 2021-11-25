@@ -224,7 +224,7 @@ quit
 ![6](screen/Screenshot_7.png)
 
 
-## Part 2.
+
 
 ### Let's look to database MySQL
 
@@ -245,6 +245,83 @@ select * from global_grants;
 ![8](screen/Screenshot_10.png)
 
 ![9](screen/Screenshot_11.png)
+
+
+
+## Part 2.
+
+```
+mysqldump -u root -p kiyko > /home/kiykomi/kiyko_base.sql
+
+mysql -u root -p
+
+drop table kiyko.patients;
+
+show use kiyko;
+
+show tables;
+
+exit
+
+mysql -u root -p kiyko < /home/kiykomi/kiyko_base.sql
+
+mysql -u root -p
+
+use kiyko
+
+show tables;
+
+select * from patients;
+
+quit
+```
+
+
+
+
+### And now let's export our base to AWS.
+
+```
+mysql -u kyikomi -h database-kiyko.csgz8pbkwn5o.eu-central-1.rds.amazonaws.com -p123456Ss!
+
+show databases;
+
+create database kiyko;
+
+show databases;
+
+quit
+
+
+
+mysql -u kyikomi -h database-kiyko.csgz8pbkwn5o.eu-central-1.rds.amazonaws.com -p123456Ss! kiyko < /home/kiykomi/kiyko_base.sql
+
+show databases;
+
+use kiyko
+
+show tables;
+
+create table testtable1 (id integer auto_increment Primary Key, lastname varchar(50),  firstname varchar(50));
+
+insert into testtable1 (lastname, firstname) values ('Ivanov', 'Ivan'), ('Petrov', 'Petr'), ('Sidorov', 'Sidor'), ('Saveliev', 'Saveliy'), ('Mikhailov', 'Mikhail');
+
+select * from testtable1;
+
+quit
+
+mysqldump -u kyikomi -h database-kiyko.csgz8pbkwn5o.eu-central-1.rds.amazonaws.com -p123456Ss! kiyko > /home/kiykomi/kiyko_base_RDS.sql
+
+```
+
+
+
+
+
+![16](screen/Screenshot_16.png)
+
+
+
 
 
 
