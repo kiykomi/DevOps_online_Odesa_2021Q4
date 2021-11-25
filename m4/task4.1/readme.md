@@ -224,7 +224,7 @@ quit
 ![6](screen/Screenshot_7.png)
 
 
-
+## Part 2.
 
 ### Let's look to database MySQL
 
@@ -245,6 +245,86 @@ select * from global_grants;
 ![8](screen/Screenshot_10.png)
 
 ![9](screen/Screenshot_11.png)
+
+
+
+## Part 3.
+
+
+### I have create new DunamoDB at Amazon AWS? enter a data to new base named "kiykomi" and query data ffrom base  with Scan and Query functions.
+
+![10](screen/Screenshot_8.png)
+
+![11](screen/Screenshot_12.png)
+
+![12](screen/Screenshot_13.png)
+
+![13](screen/Screenshot_14.png)
+
+![14](screen/Screenshot_15.png)
+
+```
+To create new lines in table I use next construction:
+{
+  "id": {
+    "N": "0"
+  },
+  "Lastname": {
+    "S": "Bonaparte"
+  },
+  "Firstname": {
+    "S": "Napoleon"
+  },
+  "Year-of-born": {
+    "S": "1769"
+  }
+}
+
+```
+
+
+
+
+# List of used information sources:
+
+
+
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-ru - How to install MySQL on Ubuntu.
+
+https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-mysql - How To Allow Remote Access to MySQL.
+
+https://www.geeksforgeeks.org/sql-ddl-dml-tcl-dcl/?ref=lbp - DDL, DML, TCL and DCL commands.
+
+https://coderoad.ru/15872543/%D0%94%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9-%D0%B1%D0%B0%D0%B7%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-mysql-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8 - How connect to remote MySQL node with CLI.
+
+https://www.sqlshack.com/how-to-backup-and-restore-mysql-databases-using-the-mysqldump-command/ - How to backup and restore MySQL databases using the mysqldump command.
+
+https://dev.mysql.com/doc/refman/5.7/en/mysqldump-sql-format.html - Dumping Data in SQL Format with mysqldump.
+
+https://metanit.com/sql/mysql/2.6.php - Changing tables and columns.
+
+https://tproger.ru/translations/sql-recap/ - Main command of MySQL, musthave!!!
+
+https://metanit.com/sql/mysql/1.3.php - How to  use MySQL Workbench.
+
+https://metanit.com/sql/mysql/4.9.php - Operator "EXIST".
+
+https://tproger.ru/translations/troubleshoot-common-errors-in-mysql/ - Typical problems With MySQL.
+
+https://andreyex.ru/bazy-dannyx/baza-dannyx-mysql/kak-izmenit-parol-polzovatelya-mysql-mariadb/ - How to change a password for MySQL.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
