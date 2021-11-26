@@ -111,7 +111,7 @@ select *  from doctors group by LastName, id;
 
 ```
 
-![1](screen/Screenshot.png)
+![1](screen/screenshot.png)
 
 
 ### Let's create users with names Sammy, Tommy, Sally, Johny
