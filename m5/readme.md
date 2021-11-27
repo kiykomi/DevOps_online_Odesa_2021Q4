@@ -147,13 +147,30 @@ rm dirinfo_abs.txt dirinfo_rel.txt
 
 
 
-### 6) 
+### 6) On this task  I used  following commands:
+
+```
+mkdir test
+cp .bash_history test/labwork2
+cd  test
+ln -P labwork2 hardlink
+ln -s labwork2 softlink
+nano softlink
+less softlink
+less labwork2
+mv hardlink hard_lnk_labwork2 && mv softlink symb_lnk_labwork2
+rm labwork2
+less hard_lnk_labwork2
+less symb_lnk_labwork2
+```
+OK,  let's define what is the hardlink and symlink.
+Hardlink - it's a link, what specify path not to the file, but to the recording itself on a filesystem, hardlinks works only in one partition and don't be used in a network path or from another drive, hardlinks works only with files and not work with folders.
+Symbolic link or Symlink -  it's like a windows shortcat file (.lnk), she only specify path to file, but she works with network paths, different partitions and folders.
+
+How  described in our example - when file was changed, text in hard and soft links equal text in originsl file, but when we delete original  file - hardlink is working (because he know where file in harddrive) and symlink is not works, because she losses the file, what specified in she's path.
 
 
-
-
-
-
+### 7) 
 
 
 
