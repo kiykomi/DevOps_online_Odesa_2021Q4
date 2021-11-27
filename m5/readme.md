@@ -128,7 +128,7 @@ With relative path
 
 ```
 cd $home 
-cd ~ - 
+cd ~ 
 ```
 
 And absolute path
