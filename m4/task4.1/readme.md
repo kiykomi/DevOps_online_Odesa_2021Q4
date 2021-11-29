@@ -359,6 +359,95 @@ To create new lines in table I use next construction:
 
 ```
 
+Also, tables Doctors and Professions are connected with function Constraint and  Foreign.
+
+As example, this is sources of my Data Base:
+
+```
+-- --------------------------------------------------------
+-- Хост:                         4.4.4.19
+-- Версия сервера:               8.0.27-0ubuntu0.20.04.1 - (Ubuntu)
+-- Операционная система:         Linux
+-- HeidiSQL Версия:              10.2.0.5599
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+-- Дамп структуры базы данных kiyko
+CREATE DATABASE IF NOT EXISTS `kiyko` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `kiyko`;
+
+-- Дамп структуры для таблица kiyko.doctors
+CREATE TABLE IF NOT EXISTS `doctors` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `LastName` varchar(50) DEFAULT NULL,
+  `FirstName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ln_index` (`LastName`),
+  UNIQUE KEY `unique_LastName` (`LastName`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Дамп данных таблицы kiyko.doctors: ~3 rows (приблизительно)
+/*!40000 ALTER TABLE `doctors` DISABLE KEYS */;
+REPLACE INTO `doctors` (`id`, `LastName`, `FirstName`) VALUES
+  (1, 'Chapayev', 'Vasiliy'),
+  (2, 'Zhivago', 'Doctor'),
+  (3, 'Avicenna', 'Doctor');
+/*!40000 ALTER TABLE `doctors` ENABLE KEYS */;
+
+-- Дамп структуры для таблица kiyko.patients
+CREATE TABLE IF NOT EXISTS `patients` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `LastName` varchar(50) DEFAULT NULL,
+  `FirstName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `LastName` (`LastName`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Дамп данных таблицы kiyko.patients: ~4 rows (приблизительно)
+/*!40000 ALTER TABLE `patients` DISABLE KEYS */;
+REPLACE INTO `patients` (`id`, `LastName`, `FirstName`) VALUES
+  (1, 'Ivanov', 'Ivan'),
+  (2, 'Petrov', 'Petr'),
+  (3, 'Sidorov', 'Sidor'),
+  (4, 'Saveliev', 'Saveliy'),
+  (5, 'Mikhailov', 'Mikhail');
+/*!40000 ALTER TABLE `patients` ENABLE KEYS */;
+
+-- Дамп структуры для таблица kiyko.professions
+CREATE TABLE IF NOT EXISTS `professions` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `Speciality` varchar(50) DEFAULT NULL,
+  `Cabinet` int DEFAULT NULL,
+  `doc_id` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `docid` (`doc_id`),
+  KEY `Cabinet` (`Cabinet`),
+  CONSTRAINT `lnk_doctors_professions` FOREIGN KEY (`doc_id`) REFERENCES `doctors` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Дамп данных таблицы kiyko.professions: ~5 rows (приблизительно)
+/*!40000 ALTER TABLE `professions` DISABLE KEYS */;
+REPLACE INTO `professions` (`id`, `Speciality`, `Cabinet`, `doc_id`) VALUES
+  (1, 'Ginekology', 101, 1),
+  (2, 'Pediatria', 102, 2),
+  (3, 'Otorinolaringology', 103, 2),
+  (4, 'Dermatology', 103, 3),
+  (5, 'surgery', 104, 1);
+/*!40000 ALTER TABLE `professions` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
+```
+
+
 
 
 
