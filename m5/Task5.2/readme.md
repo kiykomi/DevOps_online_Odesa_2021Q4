@@ -182,10 +182,37 @@ T - and top of directory hierarchy: A directory will be deemed to be the top of 
 
 
 
+# Information sources used in this task:
 
+https://linoxide.com/howto-show-file-attributes-in-linux/ - How to Show File Attributes in Linux
 
+https://ru.wikipedia.org/wiki/Sticky_bit - Sticky bit
 
+https://younglinux.info/bash/chmod - chmod command
 
+https://losst.ru/komanda-chmod-linux - chmod command
+
+https://losst.ru/prava-dostupa-k-fajlam-v-linux - access rights in linux
+
+https://www.learnitguide.net/2016/08/how-to-lock-and-unlock-user-account-linux.html#:~:text=Option%201%3A%20Use%20the%20command%20%22passwd%20%2Dl%20username%22.&text=Locking%20password%20for%20user%20username.&text=Option%202%3A%20Use%20the%20command%20%22usermod%20%2Dl%20username%22.&text=How%20to%20unlock%20users%20in%20Linux%3F - lock and unlock users
+
+https://losst.ru/kak-udalit-polzovatelya-linux - deletion user on Linux
+
+https://www.thegeekdiary.com/understanding-the-etc-skel-directory-in-linux/ - Understanding the /etc/skel directory in Linux
+
+https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/ - How to Create Users in Linux
+
+https://www.cyberciti.biz/faq/howto-change-rename-user-name-id/ - Linux Change or Rename User Name and UID
+
+https://ru.wikipedia.org/wiki/%D0%98%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80_%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F - user ID
+
+https://ru.wikipedia.org/wiki/%2Fetc%2Fpasswd - /etc/passwd
+
+https://andreyex.ru/linux/ponimanie-fajla-etc-passwd/ - Understading /etc/passwd
+
+http://fkn.ktu10.com/?q=node/9321 - /etc/group  structure
+
+https://losst.ru/komanda-ls-linux - ls command in Linux
 
 
 
