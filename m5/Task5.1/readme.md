@@ -284,14 +284,18 @@ file /dev/zfs
 ![19](screen/Screenshot_39.png)
 
 
-### 15) For seeing last 5 used firectories in /etc we can use "tail" command:
+### 15) For first 5 directories we can use following command:
 
 ```
-ls -ltr | tail -n 5
+ls -d /etc/* | head -n 5
 ```
-![18](screen/Screenshot_38.png)
+![18](screen/Screenshot_40.png)
 
+### For seeing last 5 used firectories in /etc we can use "tail" command:
 
+```
+ls -d /etc/* | tail -n 5
+```
 
 
 
