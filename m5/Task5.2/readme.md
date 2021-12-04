@@ -148,7 +148,14 @@ chmod 744 111.txt
 ![13](screen/Screenshot_13.png)
 
 
-## 15) Described in subtask 12.
+## 15) Described in subtask 12. UMASK - this command uses for set the mask, what be applyed to new files. Applies according to principle "7" - "mask" = "value". For example, if we set mask "umask 002" then this be like command "chmod 775 filename" and be applied to every new created files. Also, the "x" parameter (executable) by default only applies to folders, but does not apply to files (for security reasons). Check the current mask we can with following command:
+
+```
+umask -p - for demical view
+umask -S  - for text view
+```
+![16](screen/Screenshot_16.png)
+
 
 
 ## 16) Sticky bit - additional attribute for files and directories in the UNIX-like systems. Sticky bit uses for deletion protect  of files, if user bot owner - he can't delet file or folder. For example, let's look on temp folder in ubuntu server:
