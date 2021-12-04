@@ -239,55 +239,110 @@ For example:
 
 # Part 2.
 
+## 1) In MS Windows we can use following commands in SSH for, example:
+```
+ssh user@host - for connect to remote host via SSH;
+ssh-keygen - for generate ssh  authorization key;
+ssh user@host "command" - for quickly execute commands on remote host;
+```
+![34](screen/Screenshot_34.png)
+![35](screen/Screenshot_35.png)
+![36](screen/Screenshot_36.png)
+
+
+## 2) For increase the security of the client-server connection we can follw next rules:
+
+* Strong Usernames and Passwords
+* Configure Idle Timeout Interval
+* Disable Empty Passwords
+* Limit Users’ SSH Access
+* Disable Root Logins
+* Only Use SSH Protocol 2
+* Use Another Port
+* Use Public/Private Keys for Authentication
+
+![37](screen/Screenshot_37.png)
+![38](screen/Screenshot_38.png)
+![38](screen/Screenshot_39.png)
+![40](screen/Screenshot_40.png)
 
 
 
+## 3) For SSH exists following encryption algoritms:
+* rsa;
+* dsa;
+* ecdsa;
+* ecdsa-sk;
+* ed25519;
+* ed25519-sk.
+
+
+### Let's try some of these algoritms:
+![42](screen/Screenshot_42.png)
+![43](screen/Screenshot_43.png)
+![44](screen/Screenshot_44.png)
+
+
+## 4) No problem, we must only change the type of adapter and set port forwarding for NAT network:
+
+![45](screen/Screenshot_45.png)
+![46](screen/Screenshot_46.png)
 
 
 
+## 5) For listening traffic from SSH and Telnet we can use tcpdump. So, let's intercept some traffic:
+```
+For SSH I used command:
+sudo tcpdump -vv -i any -nn port 22 -w dump.pcap
 
-
-
-
-
-
-
-
-
-
+For Telnet I used command:
+sudo tcpdump -vv -i any -nn port 23 -w dump_23.pcap
+```
+![50](screen/Screenshot_50.png)
+![48](screen/Screenshot_48.png)
+![49](screen/Screenshot_49.png)
 
 
 # Used information sources:
 
-* [bg, fg, nohup and jobs commands;](https://losst.ru/kak-zapustit-protsess-v-fone-linux)
+[bg, fg, nohup and jobs commands;](https://losst.ru/kak-zapustit-protsess-v-fone-linux)
 
-* [kill process by TOP;](https://www.cyberforum.ru/linux/thread2550996.html)
+[kill process by TOP;](https://www.cyberforum.ru/linux/thread2550996.html)
 
-* [kill command;](https://linux-faq.ru/page/komanda-kill)
+[kill command;](https://linux-faq.ru/page/komanda-kill)
 
-* [how to kill the process;](https://losst.ru/kak-ubit-protsess-linux)
+[how to kill the process;](https://losst.ru/kak-ubit-protsess-linux)
 
-* [how to change process priority;](https://losst.ru/upravlenie-protsessami-v-linux#%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%B8%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2)
+[how to change process priority;](https://losst.ru/upravlenie-protsessami-v-linux#%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%B8%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2)
 
-* [TOP command;](https://losst.ru/komanda-top-v-linux) 
+[TOP command;](https://losst.ru/komanda-top-v-linux) 
 
-* [hot to  create a zombie process;](https://question-it.com/questions/4371557/sozdat-protsess-zombi)
+[hot to  create a zombie process;](https://question-it.com/questions/4371557/sozdat-protsess-zombi)
 
-* [zombie process;](https://losst.ru/zombi-protsessy-linux)
+[zombie process;](https://losst.ru/zombi-protsessy-linux)
 
-* [how to define kernel and user processes;](https://ru.stackoverflow.com/questions/528566/%D0%9A%D0%B0%D0%BA-%D0%B2-linux-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B-%D1%8F%D0%B4%D1%80%D0%B0-%D0%B8-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B)
+[how to define kernel and user processes;](https://ru.stackoverflow.com/questions/528566/%D0%9A%D0%B0%D0%BA-%D0%B2-linux-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B-%D1%8F%D0%B4%D1%80%D0%B0-%D0%B8-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B)
 
-* [processes in Linux;](https://life-prog.ru/view_linux.php?id=4)
+[processes in Linux;](https://life-prog.ru/view_linux.php?id=4)
 
-* [CPU info;](https://losst.ru/harakteristiki-protsessora-v-linux)
+[CPU info;](https://losst.ru/harakteristiki-protsessora-v-linux)
 
-* [processes in Linux;](https://docstore.mik.ua/manuals/ru/lnx_process/index.html)
+[processes in Linux;](https://docstore.mik.ua/manuals/ru/lnx_process/index.html)
 
-* [understending Linux processes;](https://habr.com/ru/post/423049/https://habr.com/ru/post/423049/)
+[understending Linux processes;](https://habr.com/ru/post/423049/https://habr.com/ru/post/423049/)
 
-* [The PROCFS filesystem;](http://linux.yaroslavl.ru/docs/setup/mandrake/cl/proc-fs.html)
+[The PROCFS filesystem;](http://linux.yaroslavl.ru/docs/setup/mandrake/cl/proc-fs.html)
 
-* [Proc filesystem.](https://losst.ru/fajlovaya-sistema-proc-v-linux)
+[Proc filesystem.](https://losst.ru/fajlovaya-sistema-proc-v-linux)
 
+[TCPDUMP manual#1](https://wiki.merionet.ru/servernye-resheniya/42/zaxvat-paketov-s-tcpdump-rukovodstvo-s-primerami/)
 
+[TCPDUMP manual#2](https://blog.sedicomm.com/2017/05/30/tcpdump-poleznoe-rukovodstvo-s-primerami/)
 
+[TCPDUMP manual#3](https://losst.ru/kak-polzovatsya-tcpdump)
+
+[SSH Algorytms](https://www.ssh.com/academy/ssh/keygen)
+
+[Choosing SSH keys](https://www.theurbanpenguin.com/choosing-secure-ssh-keys/)
+
+[10 Steps to Secure Open SSH](https://blog.devolutions.net/2017/04/10-steps-to-secure-open-ssh/)
