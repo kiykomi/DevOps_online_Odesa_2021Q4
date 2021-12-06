@@ -179,7 +179,7 @@ D - synchronous directory updates: it makes sure that changes to files are writt
 S - synchronous updates: the changes on a file are written synchronously on the disk.
 T - and top of directory hierarchy: A directory will be deemed to be the top of directory hierarchies for the purposes of the Orlov block allocator.
 ```
-## For list attributes we can use command lsattr:
+## For list attributes we can use command lsattr and change attributes with chattr:
 
 ![15](screen/Screenshot_15.png)
 
