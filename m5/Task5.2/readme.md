@@ -221,7 +221,7 @@ http://fkn.ktu10.com/?q=node/9321 - /etc/group  structure
 
 https://losst.ru/komanda-ls-linux - ls command in Linux
 
-
+https://losst.ru/neizmenyaemye-fajly-v-linux - chattr command
 
 
 
