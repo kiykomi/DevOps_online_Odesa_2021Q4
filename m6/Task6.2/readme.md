@@ -330,8 +330,13 @@ sudo service ospfd restart
  # Used information sources:
 
 [Configuring DHCP and DNS  with DNSMASQ](https://mnorin.com/nastrojka-dnsmasq-dhcp-dns.html)
+
 [Installing and configuring DNSMASQ](https://linux-admins.ru/article.php?id_article=62&article_title=%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%20%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20Dnsmasq)
+
 [How to install  and configure DNSMASQ  in Ubuntu](https://infoit.com.ua/linux/ubuntu/kak-ustanovit-i-nastroit-dnsmasq-na-ubuntu-18-04-lts/)
+
 [Problems with DNSMASQ](https://askubuntu.com/questions/191226/dnsmasq-failed-to-create-listening-socket-for-port-53-address-already-in-use)
+
 [Configuring OSPF in QUAGGA](https://ixnfo.com/nastrojka-ospf-v-quagga.html)
+
 [Dynamic routing in Linux](https://poligon218.ru/2020/01/23/%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-linux/)
