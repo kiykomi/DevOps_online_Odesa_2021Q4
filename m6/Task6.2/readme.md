@@ -22,8 +22,8 @@ sudo vim /etc/dnsmasq.conf
 
 ___________________________________
 #  group from who started server
-user=nobody
-group=nobody
+user=kiykomi
+group=kiykomi
 
 # DHCP interface of my server
 interface=enp0s8
