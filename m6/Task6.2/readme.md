@@ -7,6 +7,16 @@
 ![3](screen/Screenshot_3.png)
 ![4](screen/Screenshot_4.png)
 
+```
+vboxmanage controlvm  Ubuntu-21.04_Kiyko_1 nic1 nat
+vboxmanage controlvm  Ubuntu-21.04_Kiyko_1 nic2 intnet "MyNetwork"
+vboxmanage controlvm  Ubuntu-2 nic1 intnet "MyNetwork"
+vboxmanage controlvm  Ubuntu-3 nic1 intnet "MyNetwork"
+
+vboxmanage controlvm  Ubuntu-21.04_Kiyko_1 natpf1 "ssh_forwarding_VM1,tcp,10.0.2.1,2222,10.0.2.15,22"
+vboxmanage controlvm  Ubuntu-21.04_Kiyko_1 natpf1 "ssh_forwarding_VM2,tcp,10.0.2.1,2223,10.0.2.15,2223"
+vboxmanage controlvm  Ubuntu-21.04_Kiyko_1 natpf1 "ssh_forwarding_VM3,tcp,10.0.2.1,2224,10.0.2.15,2224"
+```
 
 ## 2) We well use DNSMASQ  as DHCP server on VM1:
 
@@ -121,6 +131,11 @@ address=/VM3/192.168.1.20
 ## 6) For next task I create this network structure:
 
 ![13](screen/Screenshot_13.png)
+
+```
+vboxmanage controlvm  Ubuntu-3 nic1 bridged "Realtek Gaming GbE Family Controller"
+vboxmanage controlvm  Ubuntu-3 nic2 intnet "MyNetwork"
+```
 
 ### After it I have install and configure Quagga on VMs:
 
