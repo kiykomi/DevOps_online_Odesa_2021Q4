@@ -12,6 +12,9 @@ https://amazon.qwiklabs.com/focuses/22172?catalog_rank=%7B%22rank%22%3A7%2C%22nu
 
 https://amazon.qwiklabs.com/focuses/22171?catalog_rank=%7B%22rank%22%3A27%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=catalog
 
+https://amazon.qwiklabs.com/focuses/22174?catalog_rank=%7B%22rank%22%3A15%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=catalog
+
+https://amazon.qwiklabs.com/focuses/17852?catalog_rank=%7B%22rank%22%3A93%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=cataloghttps://amazon.qwiklabs.com/focuses/17852?catalog_rank=%7B%22rank%22%3A93%2C%22num_filters%22%3A2%2C%22has_search%22%3Afalse%7D&parent=catalog
 
 
 
