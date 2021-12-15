@@ -67,7 +67,7 @@ nslookup 8.8.8.8
 ![10](screen/Screenshot_10.png)
 
 
-## 6) EMAP.COM have an address 3.214.134.159, for find this address I used command:
+## 6) EPAM.COM have an address 3.214.134.159, for find this address I used command:
 ```
 dig epam.com
 ```
