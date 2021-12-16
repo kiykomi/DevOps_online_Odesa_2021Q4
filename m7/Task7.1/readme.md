@@ -236,6 +236,7 @@ Result of script with argument --non-existent_pages_visited:
 ![6](screen/Screenshot_6.png)
 
 Result of script with argument --request_count-time: 
+
 ![7](screen/Screenshot_7.png)
 
 Result of script with argument --searchbot:
