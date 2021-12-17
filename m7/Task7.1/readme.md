@@ -37,19 +37,19 @@ function netscan {
 if [[ "$#" == "0" ]]
 then
         echo "For this script actually next arguments:"
-        echo -e "\033[32m For display the IP addresses and symbolic names of all hosts in the current subnet use argument --all"
-        echo -e "\033[33m For display a list of open system TCP ports use  argument --target (example ./script_a.sh --target 192.168.1.*"
+        echo -e "\033[32m For display the IP addresses and symbolic names of all hosts in the current subnet use argument --target"
+        echo -e "\033[33m For display a list of open system TCP ports use  argument --target (example ./script_a.sh --all 192.168.1.*"
         echo -e "\033[0m"
         exit 0
 fi
 
 
 # Block  of script where is checking conditions of input parameter.
-if [ "$1" == "--all" ]
+if [ "$1" == "--target" ]
 then
         portscan
 
-elif [ "$1" == "--target" ]
+elif [ "$1" == "--all" ]
 then
         netscan $2
 fi
