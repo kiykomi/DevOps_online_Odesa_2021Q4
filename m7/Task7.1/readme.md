@@ -179,6 +179,7 @@ function searchbot
 # This condition for written for display a list of possible keys and their description.
 if [[ "$#" == "0" ]]
 then
+	echo -e "\033[31m Warninng! Script started without arguments! \033[0m"
         echo "For this script actually next arguments:"
         echo "How to use: ./script_b.sh [--argument] [input file name] [count]"
         echo "For example: ./script_b.sh --most_requested_page apache_logs.txt 20"
@@ -267,39 +268,39 @@ Result of script with argument --searchbot:
 
 # Used information sources:
 
-# 1) [How to change several patterns in the SED command](https://coderoad.ru/26568952/%D0%9A%D0%B0%D0%BA-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%81%D1%80%D0%B0%D0%B7%D1%83-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BF%D0%B0%D1%82%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B2-%D0%BD%D0%B0-sed)
+### 1) [How to change several patterns in the SED command](https://coderoad.ru/26568952/%D0%9A%D0%B0%D0%BA-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%81%D1%80%D0%B0%D0%B7%D1%83-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BF%D0%B0%D1%82%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B2-%D0%BD%D0%B0-sed)
 
-# 2) [SED LINUX COMMAND](https://losst.ru/komanda-sed-linux)
+### 2) [SED LINUX COMMAND](https://losst.ru/komanda-sed-linux)
 
-# 3) [How do I get a list of all valid IP addresses on my local network](https://coderoad.ru/13669585/%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B2%D1%81%D0%B5%D1%85-%D0%B4%D0%BE%D0%BF%D1%83%D1%81%D1%82%D0%B8%D0%BC%D1%8B%D1%85-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%BE%D0%B2-IP-%D0%B2-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D0%B5%D1%82%D0%B8)
+### 3) [How do I get a list of all valid IP addresses on my local network](https://coderoad.ru/13669585/%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B2%D1%81%D0%B5%D1%85-%D0%B4%D0%BE%D0%BF%D1%83%D1%81%D1%82%D0%B8%D0%BC%D1%8B%D1%85-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%BE%D0%B2-IP-%D0%B2-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D0%B5%D1%82%D0%B8)
 
-# 4) [View computers on a local network from Linux terminal](https://ru.stackoverflow.com/questions/541699/%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%B2-%D0%B2-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D0%B5%D1%82%D0%B8-%D0%B8%D0%B7-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%D0%B0-linux)
+### 4) [View computers on a local network from Linux terminal](https://ru.stackoverflow.com/questions/541699/%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%B2-%D0%B2-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D0%B5%D1%82%D0%B8-%D0%B8%D0%B7-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%D0%B0-linux)
 
-# 5) [Colored text output with echo command in Bash](https://mb4.ru/programming/bash/1254-color-output-echo.html)
+### 5) [Colored text output with echo command in Bash](https://mb4.ru/programming/bash/1254-color-output-echo.html)
 
-# 6) [How to see  open ports in  Linux](https://losst.ru/kak-posmotret-otkrytye-porty-v-linux)
+### 6) [How to see  open ports in  Linux](https://losst.ru/kak-posmotret-otkrytye-porty-v-linux)
 
-# 7) [Sort command in Linux](https://losst.ru/komanda-sort-v-linux)
+### 7) [Sort command in Linux](https://losst.ru/komanda-sort-v-linux)
 
-# 8) [Full manual for Bash-scripting for novices](https://habr.com/ru/company/ruvds/blog/325522/)
+### 8) [Full manual for Bash-scripting for novices](https://habr.com/ru/company/ruvds/blog/325522/)
 
-# 9) []()
+### 9) [One-liners for parsing Apache log files](https://blog.debian-help.ru/2015/01/odnostrochniki-dlya-analiza-log-failov-apache)
 
-# 10) []()
+### 10) [awk and grep to parse apache logs](https://qastack.ru/server/11028/do-you-have-any-useful-awk-and-grep-scripts-for-parsing-apache-logs)
 
-# 11) []()
+### 11) [web server HTTP response status](https://vds-admin.ru/http/kody-sostoyaniya-http-otveta-veb-servera-metody-http)
 
-# 12) []()
+### 12) [HTTP response codes](https://developer.mozilla.org/ru/docs/Web/HTTP/Status)
 
+### 13) [Word processing commands](https://www.opennet.ru/docs/RUS/bash_scripting_guide/x7050.html)
 
+### 14) [How to determine if bash variable is empty](https://qastack.ru/server/7503/how-to-determine-if-a-bash-variable-is-empty)
 
+### 15) []()
 
+### 16) []()
 
-
-
-
-
-
+### 17) []()
 
 
 
