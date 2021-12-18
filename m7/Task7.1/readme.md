@@ -319,13 +319,20 @@ ls $srcdir > $tmpdir/snapshot.tmp
 ![11](screen/Screenshot_11.png)
 
 
+### Add to crontab:
 
+```
+crontab -e
 
+>>>
+*/1 * * * * /home/kiykomi/script_c.sh /home/kiykomi/testfoldet /home/kiykomi/Backup
 
+crontab -l
+```
 
-
-
-
+![21](screen/Screenshot_21.png)
+![22](screen/Screenshot_22.png)
+![23](screen/Screenshot_23.png)
 
 
 
