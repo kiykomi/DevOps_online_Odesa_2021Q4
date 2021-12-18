@@ -330,9 +330,9 @@ crontab -e
 crontab -l
 ```
 
-![21](screen/Screenshot_21.png)
-![22](screen/Screenshot_22.png)
 ![23](screen/Screenshot_23.png)
+![22](screen/Screenshot_22.png)
+
 
 
 
