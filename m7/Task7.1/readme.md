@@ -170,7 +170,7 @@ function searchbot
         fi
         echo -e "\033[33m What search bots have accessed the site? (UA + IP)\033[0m"
         logname=$1
-        grep "bot"  $logname | awk -F\" '{print $6}' | sort | uniq -c | head -n $2
+        cat $logname | awk '/bot/ {print $1, $12, $14, $15, $16}' | sort | uniq | awk '{print $1, $2, $3, $5}' | sort | uniq | sed 's/\"//g' | head -n $2
 }
 
 
@@ -179,7 +179,7 @@ function searchbot
 # This condition for written for display a list of possible keys and their description.
 if [[ "$#" == "0" ]]
 then
-	echo -e "\033[31m Warninng! Script started without arguments! \033[0m"
+        echo -e "\033[31m Warninng! Script started without arguments! \033[0m"
         echo "For this script actually next arguments:"
         echo "How to use: ./script_b.sh [--argument] [input file name] [count]"
         echo "For example: ./script_b.sh --most_requested_page apache_logs.txt 20"
@@ -219,7 +219,7 @@ fi
 
 
 
-###  And let's see how it works on screenshots:
+### And let's see how it works on screenshots:
 
 Result of script without arguments:
 ![2](screen/Screenshot_2.png)
