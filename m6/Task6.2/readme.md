@@ -49,7 +49,7 @@ dhcp-host=08:00:27:2B:D9:58,VM3,192.168.1.20
 dhcp-option=option:router,192.168.1.1
 
 # DNS server
-dhcp-option=option:dns-server,192.168.1.1
+dhcp-option=option:dns-server,192.168.1.1,8.8.8.8
 
 # ip leasing file
 dhcp-leasefile=/var/lib/dnsmasq/dnsmasq.leases
