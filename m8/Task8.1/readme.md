@@ -15,9 +15,9 @@ def validate_param():
     while attepmts > 0:
         try:
             print(f'you have {attepmts} attepmts')
-            a = int(input("Enter value for a: "))
-            b = int(input("Enter value for b: "))
-            c = int(input("Enter value for c: "))
+            a = float(input("Enter value for a: "))
+            b = float(input("Enter value for b: "))
+            c = float(input("Enter value for c: "))
         except ValueError:
             print("Value is not integer!")
             attepmts -= 1
