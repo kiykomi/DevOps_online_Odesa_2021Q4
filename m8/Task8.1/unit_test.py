@@ -11,7 +11,8 @@ class MyTest(unittest.TestCase):
 
     def test_roots(self):
         self.assertEqual(solv_square_equation.roots(332080, 24, 580, 45), (-0.07783690692744945, -24.088829759739216))
-
+        self.assertEqual(solv_square_equation.roots(0, 2, 4, 2), (-1))
+        self.assertEqual(solv_square_equation.roots(-32, 2, 4, 6), (None))
 
 if __name__ == '__main__':
     unittest.main()
